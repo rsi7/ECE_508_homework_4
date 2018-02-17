@@ -39,8 +39,8 @@ two  = 2;
 
 // if single argument then use that as the number of Fibonacci numbers to generate
 // otherwise, print message on usage  
-if (argc = 2) {
-    m = atoi(argv[2]);
+if (argc == 2) {
+    m = atoi(argv[1]);
     if (m > MAX) {
         fprintf(stderr, "I can't generate more than the first %0d Fibonacci numbers\n",MAX);
         exit(1);
