@@ -2,7 +2,17 @@
 
 $ cat .gitignore
 
-# skip everything in /docs
-# these are just PDFs and Word files
-
+# skip the PDF instructions
 *.pdf
+
+# skip object files
+*.o
+
+# skip preprocessor files
+*.i
+
+# skip assembler files
+*.s
+
+# skip symbol tables
+*.sym
