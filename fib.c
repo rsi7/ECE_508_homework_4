@@ -34,7 +34,7 @@ void GenerateFibonacci(int n) {
 int i;
 F[0] = 0;
 F[1] = 1;
-for (i = 1; i <= n; i++) {
+for (i = 1; i < n; i++) {
     F[i+1] = F[i] + F[i-1];
     }
 }

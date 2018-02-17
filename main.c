@@ -45,15 +45,15 @@ if (argc == 2) {
         fprintf(stderr, "I can't generate more than the first %0d Fibonacci numbers\n",MAX);
         exit(1);
     }
-    GenerateFibonacci(m);
+    GenerateFibonacci(m-1);
     do {
         fprintf(stdout, "Print which Fibonacci number? ");
-        scanf("%d", n);
-        if (n > m-1) {
+        scanf("%d", &n);
+        if (n > m) {
             fprintf(stderr, "I can't print more than the first %0d Fibonacci numbers\n",m);
             exit(1);
             }
-        fprintf(stdout,"Fibonacci number %0d = %d\n",n,F[n]);
+        fprintf(stdout,"Fibonacci number %0d = %d\n",n,F[n-1]);
         fprintf(stdout,"Quit? ");
         scanf("%s", Answer);
         }
